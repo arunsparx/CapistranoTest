@@ -1,6 +1,6 @@
 /* #Font-Face
 ================================================== */
-/*   This is the proper syntax for an @font-face file
+/* 	This is the proper syntax for an @font-face file
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
 		comment brackets */
@@ -302,9 +302,9 @@
 .iphone-form form{ width:120px; float:left;}
 .testimonials blockquote{ margin:0px; padding:0px;}
 .testimonial-section-innerpage .quote blockquote{color: #A69D98;font-family: 'lora-italic';font-size: 20px;line-height: 25px;margin: 20px 0;}
+
 /* #Media Queries
 ================================================== */
-
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 		/*body{ background:red !important;}*/
@@ -336,7 +336,7 @@
 		.footer2{ margin:0 18px;}
 		.slider-outer-ineere-main{ width:728px;}
 		.content-right-main{ margin:0px; width:268px;}
-		.header-outer{ width:100%;}
+		.header-outer{ /*width:760px;*/ width:100%;}
 		.usefull-link{ width:268px; margin:10px 0;}
 		.slider-accommodation-main{ width:380px; }
 		.slider-accommodation-main .bx-wrapper img{ height:200px !important; width:380px;}
@@ -356,7 +356,7 @@
 		.midboder { background:url(assets/images/facebookbg.png) center top repeat-y;}
 		.content-left h2{ font-size:56px;}
 		
-		
+#rev_slider_1_1, #rev_slider_1_1_wrapper{ height: 430px !important;}
 		}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -437,15 +437,15 @@
 	    .bmid form{ width:100%; float:none; margin-bottom:0px;}
 		.bmid .datepicker-out{ display:inline-block !important; float:none !important;}
 		.testimonial-section-innerpage .quote img{ float:none;}
-		.slider-innerpage #pb_slideshow_rslider-1 .nivo-prevNav{ left:25px !important;}
-		.slider-innerpage #pb_slideshow_rslider-1 .nivo-nextNav{ right:25px !important; }
+		.tp-leftarrow{ left:25px !important;}
+		.tp-leftarrow{ right:25px !important; }
 		.testimonial-section-innerpage .quote blockquote{ margin-top:5px !important;}
 		.iphone-form2 #night_id{ width:115px; display:inline-block;}
 		}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		/*body{ background:yello !important;}*/
+#rev_slider_1_1, #rev_slider_1_1_wrapper{ height: 300px !important;} 
 		}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -505,9 +505,19 @@
 		.booking-section label{ font-size:13px;}
 		.iphone-form2 #night_id{ width:115px; display:inline-block;}
 		
+		#rev_slider_1_1, #rev_slider_1_1_wrapper{ height: 200px !important;} 
+		
 		}
-
-
+	@media only screen and (min-width: 768px){
+		#rev_slider_1_1, #rev_slider_1_1_wrapper, #rev_slider_1_1_wrapper .slotholder{ max-width: 100% !important;overflow: hidden;}
+	}
+	@media only screen and (min-width: 960px){
+		#rev_slider_1_1, #rev_slider_1_1_wrapper, #rev_slider_1_1_wrapper .slotholder{ height:630px !important;}
+	}
+	
+#rev_slider_1_1_wrapper .tp-leftarrow{ left: 5% !important}
+#rev_slider_1_1_wrapper .tp-rightarrow{ right: 5% !important}
+	
    /* modified ********* */ 
  .testimonial-section-innerpage blockquote {border-left:none;}
 .widSSP widSSPnarrow{width:300px !important;}
@@ -542,6 +552,11 @@
 #pb_slideshow_rslider-1 .nivo-prevNav, .nivo-nextNav{ border:none !important; width:2px !important; height:40px !important; font-size:0px !important; border-radius:0px !important;box-shadow:0px !important;}
 .nivo-nextNav{background:url(assets/images/slidercontroler.png) left top no-repeat !important; border-radius:0px !important;box-shadow:none !important;}
 .nivo-prevNav{background:url(assets/images/slidercontroler.png) left -47px no-repeat !important; border-radius:0px !important;box-shadow:none !important;}
+
+.tp-leftarrow.large, .tp-rightarrow.large,.tp-leftarrow, .tp-rightarrow{height:47px !important;width: 15px !important;}
+.tp-rightarrow,.tp-rightarrow.large{background:url(assets/images/slidercontroler.png) left top no-repeat !important; right: 5px !important; left:inherit !important;}
+.tp-leftarrow,.tp-leftarrow.large{background:url(assets/images/slidercontroler.png) left -47px no-repeat !important; left: 5px !important;}
+
 .slider-main .nivo-directionNav a{top:30% !important;}
 .nivo-directionNav a{ top:45% !important;}
 
@@ -574,3 +589,6 @@
 
 
 .frm_form_fields .frm_blank_field input[type="text"]{ border:1px solid red;} 
+
+.rev_slider_wrapper{ padding: 0 !important;}
+.tp-bannershadow.tp-shadow2{ display: none !important;}
